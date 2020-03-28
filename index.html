@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Yuhao He's Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="lib/jquery.vticker.min.js"></script>
+	</head>
+	<body>
+		<div id="main-container">
+			<p>Hi, I am Yuhao He. </p>
+			<div id="text-slider">
+				<span>I am</span>
+				<div id="ticker">
+					<ul>
+						<li>a software engineer</li>
+						<li>a game developer for fun</li>
+						<li>too lazy to make a fancy page</li>
+					</ul>
+				</div>
+			</div>
+			<p id="intro">
+				This is a page that showcases my non-work-related projects (in case I forgot what I did). For my work experience, please go to <a href="https://www.linkedin.com/in/he-yuhao/">this page</a>.
+			</p>
+
+			<hr />
+
+			<div id="games">
+				<h2>
+					- Games -
+				</h2>
+				<div class="project">
+					<h3>China Times</h3>
+					<h4>2019-2020</h4>
+					<img src="https://drive.google.com/uc?export=view&id=1NyJ0HpQdU3V-ZlEUeqBZcAkPAZWJly9i" />
+					<p>China Times is a round-based WebGL game that aims to reflect the modern development of China. The game is hosted on the USC server, and is only open to USC students. </p>
+					<p>I maintained this game in 2017 when the game was implemented with Photon Networking. In 2019, many of dependencies of the original Unity project were outdates, so I remade this game completely (UI, game mechanics, and data synchronization). A big design change is that I used a server-client structure instead of a peer-to-peer connection, which improves reliability of the game and reduces difficulty of future development.</p>
+				</div>
+				<div class="project">
+					<h3>Domain</h3>
+					<h4>2018-2019</h4>
+					<div class="ytb-container">
+						<iframe src="https://youtube.com/embed/FfyHMg0P_iQ" frameborder="0" allowfullscreen class="ytb-video"></iframe>
+					</div>
+					<p>Domain is an Advanced Game Project at USC. This game is a multiplayer location-based mobile game. I was in charge of all server functionalities (e.g. game loop and game stats persistence), stats monitoring, and service endpoints.</p>
+				</div>
+				<div class="project">
+					<h3>BlindFire</h3>
+					<h4>2018</h4>
+					<div class="ytb-container">
+						<iframe src="https://youtube.com/embed/spCmtqmjLZg" frameborder="0" allowfullscreen class="ytb-video"></iframe>
+					</div>
+					<p>BlindFire is a 1v1 FPS game powered by Unity. </p>
+					<p>I implemented an animation system, networking functionalities, UI, and most game mechanics. Download stable games here: <a href="https://drive.google.com/file/d/1ut5wKDnqXG8gEFS3yi74g4jtjg_-pOlZ/view?usp=sharing">Windows</a> <a href="https://drive.google.com/file/d/1YLz1WZ5Tu-cdlWJdr-8LkleIuz2AmwJH/view?usp=sharing">Mac</a></p>
+				</div>
+				<div class="project">
+					<h3>Floating Shooting Dudes</h3>
+					<h4>2018</h4>
+					<img src="https://lh3.googleusercontent.com/3YqJcHu5aA-Lg-yLOKtMipGXOT6kDIq4J6A3PTOwo947OFWFZZuPWtHKoRDfNL_xuxwkyhdx2nev_5ybFyHyb6ex7xOwryjIeBq0HYWoN5fu7TIu7wsj=w673" />
+					<p>Floating Shooting Dudes is a C++ multiplayer FPS/TPS Deathmatch on Windows. I built the animation state machine, networking/synchronization of game states, and player control. See more <a href="https://sites.google.com/usc.edu/shootingdudes?pli=1&authuser=1">here</a>.</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(function() {
+			  $('#ticker').vTicker();
+			});
+		</script>
+	</body>
+</html>
