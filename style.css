@@ -6,21 +6,22 @@ body {
 	font-family: Lato, Arial;
 	font-size: 20px;
 	margin: 0 auto;
+	max-width: 700px;
 	padding-top: 20px;
 	text-align: center;
 	width: 50%;
 }
 
 #text-slider {
-	left: 90px;
-	position: relative;
+	width: 330px;
+	margin: 0 auto;
 }
 
 #ticker {
 	display: inline-block;
 	text-align: left;
-	top: 4px;
-	width: 350px;
+	top: 3px;
+	width: 280px;
 }
 
 a {
